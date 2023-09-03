@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gym Landing Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="gym logo.png" alt="Gym Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to our Gym</h1>
+            <p>Your journey to fitness starts here.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="classes" class="classes">
+        <h2>Our Classes</h2>
+        <div class="class-card">
+            <img src="yoga class.jpg" alt="Yoga class">
+            <h3>Yoga</h3>
+            <p>Find balance and flexibility with our yoga classes.</p>
+        </div>
+        <div class="class-card">
+            <img src="workout image.jpg" alt="workout class">
+            <h3>Workout</h3>
+            <p>Burn calories and improve cardiovascular health.</p>
+        </div>
+        <!-- Add more class cards as needed -->
+    </section>
+    <section id="membership" class="membership-section">
+            <h2>Join Our Membership</h2>
+            <p>Unlock exclusive content and benefits by becoming a member.</p>
+            <form class="membership-form" method="POST" action="membership.php">
+                <input type="text" placeholder="Name" name="name" class="input-field" required>
+                <input type="email" placeholder="Email" name="email" class="input-field" required>
+                <button type="submit" class="btn">Join Now</button>
+        </form>
+    </section>
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us!</p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Gym Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
