@@ -1,0 +1,94 @@
+/* Style the container */
+body {
+	background-color: #f4f4f4;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* Style the calculator title */
+  h1 {
+	color: black;
+	text-align: center;
+  }
+  
+  /* Style the calculator table */
+  table {
+	margin: 0 auto;
+	border: 3px solid black;
+  }
+  
+  /* Style the calculator input display */
+  #display {
+	width: 300px;
+	height: 50px;
+	font-size: 18px;
+	text-align: right;
+	padding-right: 20px;
+  }
+  
+  /* Style the calculator buttons */
+  input[type="button"] {
+	width: 60px;
+	height: 60px;
+	font-size: 18px;
+	background-color: #747e7c;
+	color: white;
+	border: none;
+	border-radius: 50%; /* Use border-radius to create circles */
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: none; /* Remove the default button focus outline */
+	margin: 2px; /* Add some spacing between buttons */
+  }
+  
+  /* Style the operator buttons with orange color */
+  input[type="button"][value="+"],
+  input[type="button"][value="-"],
+  input[type="button"][value="*"],
+  input[type="button"][value="^"] {
+	background-color: orange;
+	color: white;
+  }
+  
+  /* Style the "=" button */
+  input[type="button"][value="="] {
+	background-color: orange;
+	color: white;
+	border: none;
+  }
+  
+  /* Style the clear button */
+  input[type="button"][value="AC"],
+  input[type="button"][value="%"], 
+  input[type="button"][value="/"]{
+	background-color: grey;
+	color: black;
+	border: none;
+  }
+  
+  /* Style the backspace button */
+  input[type="button"][value="⌫"] {
+	background-color: orange;
+	color: white;
+	border: none;
+  }
+  
+  /* Style the numeric buttons */
+  input[type="button"][value="0"] {
+	width: 60px;
+  }
+  
+  /* Style the decimal point button */
+  input[type="button"][value="."]{
+	font-size: 24px;
+	width: 60px;
+  }
+  
+  /* Add some hover effects for buttons */
+  input[type="button"]:hover {
+	background-color: #ddd;
+  }
+  
